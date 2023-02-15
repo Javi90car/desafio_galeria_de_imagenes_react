@@ -1,14 +1,15 @@
 import Header from './components/header';
 import Card from './components/card';
 import Footer from './components/footer';
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+
 
 
 function App() {
 
   return (
-    <div>
+    <div className='galeria'>
       <Header title="Galería de Imagénes con React" />
 
       <div className='cards'>
@@ -35,11 +36,12 @@ function App() {
         <Card imgsrc="https://i.pinimg.com/200x/2d/a7/12/2da712365f1afde02264cc72f4d374b5.jpg"
           titulo="Rosas"
           descripcion="El género Rosa está compuesto por un conocido grupo de arbustos generalmente espinosos y floridos representantes principales de la familia de las rosáceas"
-        />
-      </div>
+        />   
+      </div> 
+      <Footer
+      texto= "Imagenes de flores y su descripción"
+      />
     </div>
-
-
   );
 }
 

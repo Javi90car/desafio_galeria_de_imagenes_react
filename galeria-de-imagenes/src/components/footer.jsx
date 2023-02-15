@@ -1,15 +1,17 @@
-import Badge from 'react-bootstrap/Badge';
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Alert from 'react-bootstrap/Alert';
 
-const Footer = (props) => {
-
-    return (
-      <h3>
-    <Badge bg="secondary">New</Badge>
-      </h3>
-    
-    );
-};
+function Footer({texto}) {
+  return (
+    <div className='footer'>
+      {[
+        'info',
+      ].map((variant) => (
+        <Alert key={variant} variant={variant}>
+          <h4 className='texto'>{texto}</h4>
+        </Alert>
+      ))}
+    </div>
+  );
+}
 
 export default Footer;
